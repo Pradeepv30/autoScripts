@@ -14,7 +14,6 @@ sudo add-apt-repository \
 sudo apt-get update
 sudo apt-cache policy docker-ce
 sudo apt install -y docker-ce
-sudo systemctl status docker
 
 # add current user to docker group so there is no need to use sudo when running docker
 sudo usermod -aG docker $(whoami)
