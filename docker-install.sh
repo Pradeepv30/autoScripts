@@ -16,7 +16,7 @@ sudo apt-cache policy docker-ce
 sudo apt install -y docker-ce
 
 # add current user to docker group so there is no need to use sudo when running docker
-sudo usermod -aG docker $(whoami)
+sudo usermod -aG docker $USER
 
 # Install docker-compose
 sudo curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
